@@ -3,10 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     max-width: 98.9vw !important;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgba(255, 255, 255, 0.699);
+    background-color: rgba(204, 204, 204, 0.356);
 }
 
 ul {
@@ -183,19 +184,102 @@ a .imgLogo {
 .op-clientes {
     margin-left: 40px;
     width: 20vw;
-    height: 500px;
+    height: 300px;
 
 }
 
 .op-clientes h2 {
-    font-size: 45px;
+    font-size: 70px;
     line-height: 49.5px;
     font-family: Raleway;
     font-weight: 900;
+    background-image: linear-gradient(to left, #6d6c6c, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .op-clientes-slide {
     width: 60vw;
-    height: 500px;
-    margin-right: 8dvh;
+    height: 300px;
+    margin-right: 8vh;
+}
+
+.contact {
+    position: fixed;
+    bottom: 50px;
+    right: -20px;
+    width: 100px;
+    height: 30px;
+}
+
+.contact img{
+    width: 50px;
+}
+
+.prev, .next {
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.445);
+    border: 0;
+    position: relative;
+}
+
+.prev {
+    margin-left: 40%;
+}
+
+.titulo h2{
+    text-align: center;
+    background-image: linear-gradient(to right, #b2f9ff, #1e8799);
+    font-size: 60px;
+    color: #277fbd;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    margin-bottom: 100px;
+}
+
+.cards-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.card-div {
+    width: 300px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.466);
+    margin: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-div img:hover {
+    scale: 1.05;
+    border-radius: 20px;
+}
+
+
+.card-div h3{
+    font-size: 24px;
+    text-align: left;
+    margin: 20px;
+}
+
+.card-div p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.card-div .data {
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px;
 }
